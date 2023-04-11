@@ -1,13 +1,10 @@
 version: 2
 updates:
-  - package-ecosystem: github-actions
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "sunday"
-    open-pull-requests-limit: 30
+      interval: "daily"
     assignees:
       - o0shojo0o
-    versioning-strategy: increase
-    allow:
-      - dependency-type: "direct"
+    target-branch: "main"
